@@ -1,0 +1,904 @@
+﻿@font-face
+{
+    font-family: 'Nevis';
+    src: url('../fonts/nevis.eot');
+    src: url('../fonts/nevis.eot?#iefix'), url('../fonts/nevis.woff'), url('../fonts/nevis.ttf'), url('../fonts/nevis.svg#VegurBold');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;   
+}
+
+body, html
+{
+    background-color: #222;
+}
+
+#wrapper
+{
+    width: 100%;
+}
+
+#content-wrapper
+{
+    overflow: auto;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.secondary-content-wrapper
+{
+    width: 82%;
+    position: fixed;
+    margin-left: 18%;
+    overflow: auto;
+    background-color: #FFF;
+}
+
+h1, h2, h3, p
+{
+    font-family: Raleway;
+    font-weight: 400;
+}
+
+.text-link:link, .text-link:visited
+{
+    text-decoration: none; 
+    color: #E16C0F;  
+}
+
+/* ~~~~~~~~~~ Navigation Bar ~~~~~~~~~~ */
+
+.nav-bar-wrapper
+{
+    width: 15%;
+    height: 100vh;
+    float: left;
+    position: relative;
+    background-color: #F9F9F9;
+    box-shadow: 0 .3em .2em #000;
+    min-width: 130px;
+    z-index: 5;
+}
+
+#imgLogo
+{
+    width: 70%;
+    margin: 23px auto;
+    display: block; 
+}
+
+#imgTitle
+{
+    margin: 20px auto;
+    display: block;
+    width: 85%;
+}
+
+.nav-bar-list
+{
+    line-height: 45px;
+    vertical-align: middle;
+    margin: 28px 0 0 15%;
+    width: 30%;
+    display: inline-block;
+    float: left;
+}
+
+.nav-bar-list li
+{
+    list-style: none;   
+    text-decoration: none;
+    font-family: Raleway;
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+.nav-item, .nav-item:link
+{
+    text-decoration: none;
+    color: #555;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+}
+
+.nav-item:hover
+{
+    color: #AAA;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+}
+
+.selected-item
+{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+#secondary-nav-bar-wrapper
+{
+    width: 18%;
+    min-width: 217px;
+    box-sizing: border-box;
+}
+
+.secondary-nav-bar-list
+{
+    line-height: 45px;
+    vertical-align: middle;
+    width: 52%;
+    display: inline-block;
+    float: left;
+}
+
+.secondary-nav-bar-list li
+{
+    list-style: none;   
+    text-decoration: none;
+    font-family: Raleway;
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+.secondary-nav-bar-list li:first-child
+{
+    margin-top: 20px;
+}
+
+.footer
+{
+    position: fixed;
+    bottom: 10px;
+    width: 15%;
+    text-align: center;
+    font-size: 9px;
+    font-family: Raleway;
+    color: #999;
+    line-height: 18px;
+    min-width: 130px;
+}
+
+#secondary-footer
+{
+    width: 18%;
+    min-width: 217px;
+}
+
+.social-icon{
+    width: 18px;
+    margin: 0 5px;
+}
+
+/* ~~~~~~~~~~ Home Page ~~~~~~~~~~ */
+
+.home-content-image
+{
+    opacity: 0.85;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    box-shadow: #000 0em 0em 0em;
+    width: 33.33333%;
+    display: inline-block;
+    float: right;
+}
+
+.home-content-image:hover
+{
+    opacity: 1;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+/* ~~~~~~~~~~ About Page ~~~~~~~~~~ */
+
+#about-secondary-nav-bar-list
+{
+    margin-top: 268px;
+}
+
+#about-content
+{
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: auto;
+}
+
+#about-content-text
+{
+    width: 70%;
+    height: 100vh;
+    float: left;
+    overflow: auto;
+    background-color: #FFF;
+}
+
+#about-content-title
+{
+    width: 71%;
+    margin: 5% auto 0;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+#about-content-subtitle
+{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#about-content-body
+{
+    font-size: .8em;
+    line-height: 1.65em;
+    margin: 0 auto;
+    width: 70%;
+    text-align: justify;
+}
+
+#btnDwnResume
+{
+    margin: 5% auto;
+    display: block;
+    width: 175px;
+    height: 35px;
+    border: 0px solid #000;
+    background-color: #777;
+    color: #FFF;
+    font-family: Raleway;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+
+#btnDwnResume:hover
+{
+    background-color: #444;
+}
+
+#about-content-feedback
+{
+    margin: 15% auto;
+    width: 70%;
+    font-size: .8em;
+    line-height: 1.65em;
+    text-align: justify;
+    font-family: Raleway;
+}
+
+#about-content-feedback h2
+{
+    margin-bottom: 2%;
+    display: inline-block;
+    font-size: 1.75em;
+    text-align: left;
+}
+
+#tbFeedback
+{
+    margin: 2% 0 5%;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    max-height: 300px;
+    border: 1px solid #AAA;
+    font-size: 1.1em;
+    font-family: Arial;
+}
+
+#tbEmail
+{
+    width: 60%;
+    height: 25px;
+    margin-top: 5%;
+    border: 1px solid #AAA;
+    text-indent: 10px;
+    font-family: Arial;
+}
+
+#btnFeedback
+{
+    margin-right: 25px;
+    width: 125px;
+    height: 35px;
+    border: 0px solid #000;
+    background-color: #777;
+    color: #FFF;
+    float: right;
+    font-family: Raleway;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+
+#btnFeedback:hover
+{
+    background-color: #444;
+}
+
+#lblFeedbackSubmit
+{
+    color: #060;
+    font-family: Arial;
+    text-align: left;
+    text-indent: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#about-image-strip
+{
+    width: 30%;
+    height: 100vh;
+    float: right;
+    display: inline-block;
+    overflow: auto;
+}
+
+.about-image-strip-item
+{
+    width: 100%;   
+}
+
+#about-contact
+{
+    height: 100vh;
+    overflow: auto;
+    background-color: #FFF;
+    z-index: 1;
+}
+
+#about-contact-title
+{
+    font-size: 2.5em;
+    margin: 4% 0 0 8%;
+    font-weight: 500;
+}
+
+#about-contact-table
+{
+    margin: 25px 0 0 8%;
+    width: 92%;
+}
+
+#about-contact-table-info
+{
+    width: 23%;
+    vertical-align: top;
+}
+
+#map-canvas
+{
+    width: 100%;
+    height: 475px;
+}
+
+#contact-info
+{
+    font-size: .835em;   
+    font-family: Raleway;
+    float: right;
+    padding: 20% 10% 0 3%;
+    float: left;
+}
+
+.info
+{
+    margin: 15px;   
+    line-height: 1.4em
+}
+
+#about-update-tag
+{
+    text-align: center;
+    font-family: Arial;
+    font-size: 0.6em;
+    color: #DDD;   
+}
+
+/* ~~~~~~~~~~ Projects Page ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ PTCD ~~~~~~~~~~ */
+
+#projects-secondary-nav-bar-list
+{
+    margin-top: 73px;
+}
+
+#projects-content
+{
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: auto;
+    z-index: 1;
+}
+
+#projects-body1
+{
+    background-color: #FFF; /*#B45A5A, Cake Bake Color: #B2DDD7*/
+    height: 600px;
+}
+
+#projects-body1-title
+{
+    padding: 100px 0 30px;
+    font-family: Raleway;
+    font-size: 3.5em;
+    color: #FF2727;
+    text-align: center;
+}
+
+#imgPTCDLogo
+{
+    width: 500px;
+    margin: 125px auto 0;
+    display: block;
+}
+
+#projects-body1-subtitle
+{
+    margin-top: 0px;
+    font-family: Raleway;
+    font-size: 1.75em;
+    color: #222;
+    text-align: center;
+}
+
+#projects-body2
+{
+    background-color: #FFF;
+    height: 750px;
+}
+
+#projects-body2-text
+{
+    margin: 0 auto; 
+    width: 850px;  
+}
+
+#projects-body2-text div h2
+{
+    margin-top: 25px;
+    font-family: Nevis;
+    font-size: 2.6em;
+    font-weight: 400;
+    color: #FF2727;
+}
+
+#projects-body2-text div
+{
+    font-family: Raleway;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+#imgPTCDDatabase
+{
+    width: 650px;
+    margin: 0 auto;
+    display: block;
+}
+
+#projects-body3
+{
+    background: url('../images/ptcd_desktop_mobile2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 775px;
+    border-bottom: 1px solid #222;
+}
+
+#projects-body3-text1
+{
+    padding: 98px 300px 0 5%;
+    float: left;
+    width: 475px;
+    font-size: 1.15em;
+    font-family: Raleway;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+#projects-body3-text2
+{
+    margin: 200px 10% 0 0;
+    width: 500px;
+    font-size: 1.15em;
+    font-family: Raleway;
+    text-align: justify;
+    line-height: 1.4em;
+    float: right;
+}
+
+#projects-body3-text1 h2, #projects-body3-text2 h2
+{
+    margin-bottom: 5px;
+    font-family: Nevis;
+    font-size: 2.25em;
+    text-align: left;
+    color: #FF2727;
+    line-height: normal;
+}
+
+#construction
+{
+    width: 100%;
+    margin-top: 300px;
+    color: #FEFEFE;
+    font-size: 50px;
+    font-family: Raleway;
+    text-align: center;
+}
+
+/* ~~~~~~~~~~ MJ Wedding ~~~~~~~~~~ */
+
+#projects-mj-body
+{
+    background-color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+}
+
+#imgMJWedding
+{
+    width: 70%;
+    margin-top: 50px;
+}
+
+#projects-mj-title
+{
+    margin-top: 50px;
+    font-size: 64px;
+}
+
+#projects-mj-subtitle
+{
+    margin: 30px auto 0;
+    font-size: 18px;
+    color: #999;
+    letter-spacing: 8px;
+    word-spacing: 40px;
+}
+
+#projects-mj-date
+{
+    padding: 75px 0 135px;
+    font-size: 30px;
+}
+
+#btnProjectsMJDate
+{
+    width: 175px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0px solid #000;
+    background-color: #777;
+    color: #FFF;
+    font-family: Raleway;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+
+#btnProjectsMJDate:hover
+{
+    background-color: #444;
+}
+
+/* ~~~~~~~~~~ Running Page ~~~~~~~~~~ */
+
+#running-content
+{
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: auto;
+}
+
+#running-body1
+{
+    background: url('../images/running_1L.jpg') no-repeat;
+    background-size: 100%;
+    background-color: #FFF;
+}
+
+#running-body1-title
+{
+    padding: 21% 0 0 10%;
+    font-weight: 600;
+    font-family: Impact;
+    font-size: 7.5em;
+    color: #222;
+}
+
+#running-body2
+{
+    background-color: #FFF;
+    z-index: 1;
+    font-size: 1.15em;
+    font-family: Raleway;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+#running-body2 h2
+{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 90px;
+    font-size: 2em;
+}
+
+.running-body2-text
+{
+     margin: 25px auto 0;
+     width: 75%;
+}
+
+@media screen and (min-width: 1200px)
+{
+    .running-body2-text
+    {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px)
+{
+    .running-body2-text
+    {
+        font-size: 0.75em;
+        line-height: 1.45em;
+    }
+    
+    #imgTeam
+    {
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 979px)
+{
+    .running-body2-text
+    {
+        font-size: 0.6em;
+        line-height: 1.3em;
+    }
+    
+    #imgTeam
+    {
+        margin-top: 65px;
+    }
+}
+
+#running-body2-text2
+{
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+
+#running-body2-text2 span
+{
+    margin-top: 10px;   
+    display: inherit;
+}
+
+#imgTeam
+{
+    margin: 85px 50px 0 30px;
+    width: 45%;
+    float: right;
+}
+
+#running-body3
+{
+    height: 650px;
+    position: relative;
+    padding-top: 75px;
+    background-color: #FFF;
+    z-index: 2;
+    box-shadow: 1.4em 1.5em 1.3em 1.3em #000;
+}
+
+#running-body3-title
+{
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#running-body3-times
+{
+    padding-top: 75px;
+}
+
+#running-body3-times-container
+{
+    margin: 0 auto;
+}
+
+#running-body3-times-container tr td
+{
+    padding: 0 75px;
+}
+
+#running-body3-times table tr td table 
+{
+    font-family: Raleway;
+    color: #999;
+    text-align: center;
+}
+
+.running-body3-times-break
+{
+    padding-top: 25px !important;
+    color: #444;
+    text-indent: 25px;
+}
+
+#running-body3-times table tr td table tr td
+{
+    padding: 5px 10px;
+}
+
+#running-body3-times table tr td table tr td:nth-child(odd)
+{
+    text-align: right;
+}
+
+#btnRunningContact
+{
+    margin: 100px auto 0;
+    display: block;
+    width: 200px;
+    height: 40px;  
+    border: 0px solid #000;
+    background-color: #777;
+    color: #FFF;
+    font-family: Raleway;
+    border-radius: 2px;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+
+#btnRunningContact:hover
+{
+    background-color: #444;
+}
+
+/* ~~~~~~~~~~ Violin Page ~~~~~~~~~~ */
+
+#violin-content
+{
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: auto;
+    z-index: 1;
+}
+
+#violin-bio
+{
+    height: 100vh;
+    background: url(../images/violin_bw.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    text-align: center;
+    font-family: Raleway;
+}
+
+#violin-bio-body
+{
+    width: 36%;
+    margin: 150px 0 0 85px;
+    float: left;
+    text-align: left;
+    color: #FEFEFE;
+}
+
+#violin-bio-title
+{
+    font-size: 74px;
+}
+
+#violin-bio-text
+{
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+#violin-video
+{
+    background-color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    z-index: 2;
+    height: 100vh;
+}
+
+#violin-iframe
+{
+    width: 860px;
+    height: 480px;
+}
+
+#violin-title
+{
+    font-size: 48px;
+    padding: 60px 0 75px 0;
+}
+
+#violin-body
+{
+    margin-top: 40px;
+}
+
+/* ~~~~~~~~~~ Others Page ~~~~~~~~~~ */
+
+#others-body{
+    background-color: #FFF;
+    padding: 15px 0;
+    width: 100%;
+}
+
+#project-cc, #project-v, #project-pp, #project-ac{
+    width: 800px;
+    margin: 85px auto;
+    padding: 25px;
+    background-color: #DEDEDE;
+    border-radius: 5px;
+    color: #222;
+    font-size: 15px;
+    line-height: 1.35em;
+    font-family: Raleway;
+    text-align: justify;
+    /*box-shadow: .05em .05em .1em #555;*/
+}
+
+.project-title, .project-year{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.7em;
+    display: inline-block;
+    width: 300px;
+}
+
+.project-year{
+    width: auto;
+    float: right;
+}
+
+#project-notice{
+    text-align: center;
+    margin-top: 40px;
+    color: #999;
+    font-size: 13px;
+}
+
+.btnProjDownload
+{
+    margin: 30px auto 5px;
+    display: block;
+    width: 175px;
+    height: 35px;
+    border: 0px solid #000;
+    background-color: #777;
+    color: #FFF;
+    font-family: Raleway;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+
+.btnProjDownload:hover
+{
+    background-color: #444;
+}
+
+#cars-iframe{
+    width: 640px;
+    height: 400px;
+    display: block;
+    margin: 25px auto 0;
+}
+

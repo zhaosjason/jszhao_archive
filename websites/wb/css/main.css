@@ -1,0 +1,53 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 50px;
+}
+
+#wrapper{
+    width: 100%;
+}
+
+p{
+    margin-top: 10px;
+    width: 800px;
+}
+
+#tbInput{
+    width: 250px;
+    height: 23px;
+    text-indent: 5px;
+}
+
+#btnSubmit{
+    width: 100px;
+    height: 26px;
+}
+
+#tbInput, #btnSubmit {
+    margin: 25px 10px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+#tbOutput{
+    width: 700px;
+    height: 300px;
+    margin: 25px 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    float: left;
+}
+
+#tbWordList{
+    width: 400px;
+    height: 300px;
+    margin: 25px 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    float: left;
+    display: inline-block;
+}

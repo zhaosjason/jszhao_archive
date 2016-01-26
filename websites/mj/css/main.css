@@ -1,0 +1,899 @@
+﻿@font-face
+{
+    font-family: 'Lavanderia';
+    src: url('../fonts/Lavanderia_Regular.eot');
+    src: url('../fonts/Lavanderia_Regular.eot?#iefix'), url('../fonts/Lavanderia_Regular.woff'), url('../fonts/Lavanderia_Regular.ttf'), url('../fonts/Lavanderia_Regular.svg#Lavanderia');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #EFEFEF url('../images/flowers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: cabin;
+}
+
+#wrapper
+{
+    margin: 25px 0;
+}
+
+@media all and (min-width: 1200px)
+{
+    #wrapper
+    {
+        min-width: 1200px;
+    }
+
+    .ribbon-wrapper, #content-wrapper
+    {
+        position: relative;
+        margin: 0 15%;
+    }
+
+    #page-wrapper
+    {
+        margin: 20px 15% 0;
+        height: 35px;
+    }
+}
+
+@media all and (max-width: 1199px)
+{
+    #wrapper
+    {
+        min-width: 800px;
+    }
+
+    .ribbon-wrapper, #content-wrapper
+    {
+        position: relative;
+        margin: 0 auto;
+        width: 850px;
+    }
+
+    #page-wrapper
+    {
+        margin: 20px auto 0;
+        height: 35px;
+        width: 850px;
+    }
+}
+
+/* -------- Ribbon -------- */
+
+.ribbon-front
+{
+    width: 100%;
+    background-color: #89001D;
+    height: 60px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.ribbon-front, .ribbon-back-left, .ribbon-back-right
+{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.55);
+}
+
+.ribbon-edge-bottomleft, .ribbon-edge-bottomright
+{
+    position: absolute;
+    z-index: 1;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    top: 60px;
+}
+
+.ribbon-edge-bottomleft
+{
+    left: 0%;
+    border-color: transparent #4C0002 transparent transparent;
+    border-width: 0 10px 10px 0;
+}
+
+.ribbon-edge-bottomright
+{
+    right: 0%;
+    border-color: transparent transparent transparent #4C0002;
+    border-width: 0 0 10px 10px;
+}
+
+.ribbon-back-right
+{
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    width: 50px;
+    height: 60px;
+    background-color: #970023;
+    z-index: 0;
+}
+
+.ribbon-back-left
+{
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 50px;
+    height: 60px;
+    background-color: #970023;
+    z-index: 0;
+}
+
+/* -------- Nav Bar -------- */
+
+#nav-bar-wrapper
+{
+    display: table;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#nav-bar
+{
+    display: table-row;
+    height: 60px;
+    font-size: .8em;
+    line-height: 3.8em;
+    color: #FEFEFE;
+    cursor: default;
+}
+
+#nav-bar li
+{
+    display: table-cell;
+    padding: 5px 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 17.5%;
+}
+
+#nav-bar li a:link, #nav-bar li a:visited
+{
+    text-decoration: none;
+    color: #FEFEFE;
+}
+
+#nav-bar-mj, #nav-bar-wedding
+{
+    top: 60px; /*Relative: 7px*/
+    width: 16.66666%;
+    position: absolute;
+    padding: 10px 0;
+    background-color: #970023;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+}
+
+#nav-bar li:hover #nav-bar-wedding, #nav-bar li:active #nav-bar-wedding, #nav-bar li:focus #nav-bar-wedding
+{
+    visibility: visible;
+    opacity: .975;
+}
+
+#nav-bar li div
+{
+    color: #FEFEFE;
+}
+
+#nav-bar-wedding li, #nav-bar-mj li
+{
+    width: 100%;
+    padding: 7px 0;
+    display: list-item;
+    list-style: none;
+    line-height: normal;
+}
+
+#logo
+{
+    font-size: 2.75em;
+    vertical-align: top !important;
+    font-family: Lavanderia;
+    width: 30% !important;
+}
+
+/* -------- All Pages -------- */
+
+#page-border
+{
+    margin: 0 10px 0 10px;
+    padding: 12px 12px 0 12px;
+    background: #FEFEFE;
+    border-radius: 1px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+}
+
+#page-top
+{
+    height: 30px;
+    border: 1px solid #888;
+    border-bottom: 1px none #000;
+    border-radius: 1px;
+}
+
+#content-border
+{
+    margin: 0 10px 0 10px;
+    padding: 0 12px 12px 12px;
+    background: #FEFEFE;
+    border-radius: 1px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+}
+
+.content
+{
+    border: 1px solid #888;
+    border-top: 1px none #000;
+    border-radius: 1px;
+    padding: 10px;
+}
+
+#content-wide
+{
+    padding: 10px 50px;
+}
+
+/* -------- Home Page -------- */
+
+#ImgHomeMain
+{
+    width: 90%;
+    position: relative;
+    margin: 25px auto;
+    display: block;
+    border-radius: 1px;
+}
+
+#date-header, #countdown-header
+{
+    right: 12%;
+    top: 100px;
+    padding: 5px 8px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    color: #FFF;
+    font-size: 10px;
+    font-family: Raleway;
+    vertical-align: middle;
+}
+
+#countdown-header
+{
+    right: 13%;
+    top: 160px;
+    padding: 1px 5px;
+    background-color: transparent;
+    color: rgba(0,0,0,0.7);
+}
+
+#date-big, #lblCountdown
+{
+    font-size: 37px;   
+}
+
+#home-thumbs
+{
+    width: 90%;
+    margin: 45px auto;
+    display: block;
+}
+
+.imgThumb, .imgThumb-desc
+{
+    display: inline-block;
+    width: 29%;
+    float: left;
+    font-size: 14px;
+    border-radius: 1px;
+    text-align: justify;
+}
+
+.imgThumb-desc a:link, .imgThumb-desc a:visited
+{
+    color: #E16C0F;
+    text-decoration: none;
+}
+
+#imgThumb2, #imgThumb2-desc, #imgThumb2-desc-header
+{
+    margin: 0px 6.5% 0px 6.5%;
+}
+
+#imgThumb1-desc-header, #imgThumb2-desc-header, #imgThumb3-desc-header
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#imgThumb1-desc, #imgThumb2-desc, #imgThumb3-desc
+{
+    margin-top: 20px;
+    line-height: 1.35em;
+}
+
+#copyright, #copyright a, #copyright a:visited
+{
+    text-decoration: none;
+    color: #AAA;
+}
+
+#copyright
+{
+    width: 100%;
+    text-align: center;
+    font-size: .5em;
+    margin-top: 30px;
+}
+
+/* -------- Our Story Page-------- */
+
+#our-story-title
+{
+    margin-top: 15px;
+    font-size: 64px;
+    color: #222;
+}
+
+#our-story-title span
+{
+    font-size: 16px;
+}
+
+#our-story-quote
+{
+    margin: 5px 0 0 3px;
+    font-size: 20px;
+    color: #BBB;
+}
+
+#our-story-body
+{
+    margin: 25px 0 50px 30px;
+    width: 75%;
+    line-height: 1.5em;
+    color: #222;
+    font-size: 14.5px;
+    font-family: Calibri;
+    text-align: justify;
+}
+
+#imgStory1
+{
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* -------- Gallery Page-------- */
+
+#gallery-title
+{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 40px;
+    color: #222;
+}
+
+.container
+{
+    margin: 15px 10px 0;
+}
+
+#links
+{
+    text-align: center;
+    margin: 15px 0 35px;
+}
+
+#links a img
+{
+    width: 90px;
+}
+
+/* -------- Registries Page-------- */
+
+#registries-title
+{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 50px;
+    color: #222;
+}
+
+.registry
+{
+    width: 35%;
+    margin: 30px 0 50px 5.25%;
+    padding: 25px;
+    float: left;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+#imgHMW, #imgCAB, #imgMAC
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#btnHMW, #btnCAB, #btnMAC
+{
+    margin: 45px 0 15px;
+    width: 200px;
+    height: 40px;
+    border: 0 solid #000;
+    background-color: #777;
+    color: #FFF;
+    transition: background-color .5s;
+}
+
+#btnHMW:hover, #btnCAB:hover, #btnMAC:hover
+{
+    background-color: #444;
+}
+
+/* -------- Accommodations Page-------- */
+
+#accommodations-title
+{
+    margin-top: 15px;
+    font-size: 55px;
+    color: #222;
+}
+
+#accommodations-body
+{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #222;
+}
+
+.acc-hotel
+{
+    width: 100%;
+    margin: 40px 0 60px;
+    background-color: #EEE;
+}
+
+.acc-hotel-img
+{
+    width: 30%;
+    float: left;
+}
+
+.acc-hotel-body
+{
+    width: 69%;
+    float: right;
+    color: #222;
+}
+
+.acc-hotel-name
+{
+    width: 75%;
+    font-size: 28px;
+    float: left;
+}
+
+.acc-hotel-name a:link, .acc-hotel-name a:visited
+{
+    text-decoration: none;
+    color: #222;
+    transition: color 0.2s linear;
+}
+
+.acc-hotel-name a:hover
+{
+    color: #333;
+    text-decoration: underline;
+}
+
+.acc-hotel-address, .acc-hotel-phone
+{
+    width: 75%;
+    margin-bottom: 1px;
+    font-size: 16px;
+    float: left;
+}
+
+.acc-hotel-price
+{
+    padding: 12px 12px 0 0;
+    width: 15%;
+    font-size: 36px;
+    color: Green;
+    text-align: right;
+    line-height: 0.7em;
+    float: right;
+}
+
+.acc-hotel-price span
+{
+    font-size: 12px;
+    color: #222;
+}
+
+.acc-hotel-desc
+{
+    width: 65%;
+    margin-top: 10px;
+    float: left;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.btnAccommodations
+{
+    margin: 23px 10px 0 0;
+    width: 125px;
+    height: 35px;
+    float: right;
+    border: 0 solid #000;
+    background-color: #777;
+    color: #FFF;
+    transition: background-color .5s;
+}
+
+.btnAccommodations:hover
+{
+    background-color: #444;
+}
+
+/* -------- Attractions Page-------- */
+
+#attractions-title
+{
+    margin-top: 15px;
+    font-size: 55px;
+    color: #222;
+}
+
+#attractions-body
+{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #BBB;
+}
+
+#att-map-title
+{
+    margin-top: 50px;
+    font-size: 36px;
+    text-align: center;
+    color: #222;
+}
+
+#map-canvas
+{
+    width: 100%;
+    height: 475px;
+    margin: 15px 0 50px;
+}
+
+.att-place
+{
+    width: 100%;
+    margin: 40px 0 60px;
+}
+
+.att-place-img
+{
+    width: 39%;
+    float: left;
+}
+
+.att-place-body
+{
+    width: 59%;
+    float: right;
+}
+
+.att-place-name
+{
+    font-size: 26px;
+}
+
+.att-place-name a:link, .att-place-name a:visited
+{
+    text-decoration: none;
+    color: #222;
+    transition: color 0.2s linear;
+}
+
+.att-place-name a:hover
+{
+    color: #333;
+    text-decoration: underline;
+}
+
+.att-place-desc
+{
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* -------- Events Page-------- */
+
+#events-title
+{
+    margin-top: 15px;
+    font-size: 55px;
+    color: #222;
+}
+
+#events-title span
+{
+    font-size: 20px;
+    color: #BBB;
+}
+
+#events-body
+{
+    margin-top: 10px;
+    color: #222;
+    font-size: 16px;   
+}
+
+.eve-item
+{
+    height: 60px;
+    margin: 40px 0 0 5%;
+    color: #222; 
+}
+
+#eve-endnote
+{
+    margin: 40px 0 10px 8%;
+    color: #888;
+}
+
+.imgEve
+{
+    width: 25%; 
+    margin: 40px 0 30px;
+    float: left;
+}
+
+.eve-item-time
+{
+    width: 28%;
+    float: left;
+    font-size: 56px;
+    text-align: right;
+    line-height: .975em;
+    color: #444;
+}
+
+.eve-item-name
+{
+    margin-left: 8%;
+    float: left;
+    font-size: 25px;  
+}
+
+.eve-item-location
+{
+    margin-left: 8%;
+    float: left;
+    font-size: 16px;
+}
+
+/* -------- Wedding Party Page-------- */
+
+#party-title
+{
+    margin-top: 15px;
+    font-size: 55px;
+    color: #222;
+    text-align: center;
+}
+
+#party-body
+{
+    margin-top: 5px;
+    font-size: 18px;
+    color: #BBB;
+    text-align: center;
+}
+
+#party-nav
+{
+    margin: 25px auto;
+    text-align: center;
+}
+
+#party-nav ul
+{
+    display: table-row;
+}
+
+#party-nav ul li
+{
+    display: inline;
+    width: 8%;
+}
+
+#party-nav ul li a img
+{
+    width: 16.66666%;
+    opacity: 0.85;
+    transition: opacity 0.25s linear;
+}
+
+#party-nav ul li a img:hover
+{
+    opacity: 1;
+}
+
+.pty-person-img
+{
+    float: left;
+    margin: 25px 0 25px;
+}
+
+.pty-person-body
+{
+    width: 76%;
+    float: right;
+    margin: 25px 0 25px;
+    color: #222;
+}
+
+.pty-person-name
+{
+    font-size: 31px;
+}
+
+.pty-person-title
+{
+    font-size: 20px;
+}
+
+.pty-person-desc
+{
+    margin-top: 10px;
+    font-size: 15.5px;
+    text-align: justify;
+    line-height: 1.35em;
+}
+
+/* -------- RSVP Page-------- */
+
+#rsvp-title
+{
+    margin-top: 15px;
+    font-size: 48px;
+    color: #222;
+    text-align: center;
+}
+
+#rsvp-form
+{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#rsvp-form h3
+{
+    margin: 30px auto 0;
+    padding: 10px;
+    width: 500px;
+    font-family: Raleway;
+    font-size: 28px;
+    color: #222;
+    font-weight: normal;
+    background-color: #DDD;
+    border-radius: 30px;
+    transition: background-color 0.3s linear
+}
+
+#rsvp-form h3:hover, #rsvp-form h3:visited
+{
+    background-color: #B9B9B9;
+}
+
+.extraPersonTemplate 
+{
+    display:none;
+}
+
+#lblPerson
+{
+    font-size: 24px;
+    margin: 5px;
+    font-family: Raleway;
+}
+
+.ddlPrefix
+{
+    height: 34px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.tbFName, .tbLName
+{
+    height: 20px;
+    width: 175px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.rFood
+{
+    margin: 10px 0 30px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.rFood input:not(:first-child)
+{
+    width: 20px;
+    margin-left: 12px;
+}
+
+#addRow
+{
+    color: #777;
+    font-size: 15px;
+}
+
+.tbEmail
+{
+    height: 20px;
+    width: 350px;
+    padding: 5px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.btnSubmit
+{
+    margin-top: 25px;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #777;
+    color: #FFF;
+    transition: background-color .5s;
+    border: none;
+    font-size: 16px;
+}
+
+.btnSubmit:hover
+{
+    background-color: #444;
+}
+
+#RSVPConfirm
+{
+    margin: 50px 0 -25px;
+    text-align: center;
+}
+
+#RSVPConfirm a:link, #RSVPConfirm a:visited
+{
+    text-decoration: none;
+    color: #E16C0F;
+}
+
+#lblStatus
+{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}

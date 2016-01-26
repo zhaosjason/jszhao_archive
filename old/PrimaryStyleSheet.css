@@ -1,0 +1,203 @@
+﻿*, html
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: #FEFEFE;
+    min-width: 800px;
+}
+
+a:link, a:visited
+{
+    color: #FEFEFE;
+}
+
+#home-wrapper
+{
+    width: 100%;
+    font-family: Arial;
+    color: #222;
+}
+
+#top-Bar
+{
+    width: 100%;
+    min-width: 800px;
+    height: 60px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#home-logo
+{
+    margin: 10px 10px 10px 30px;
+    position: relative;
+    float: left;
+    font-family: Arial;
+    font-size: 32px;
+}
+
+#home-logo a
+{
+    text-decoration: none;
+}
+
+#home-navigation-bar-wrapper
+{
+    position: relative;
+    float: right;
+    width: 300px;
+    margin: 20px 30px 10px 10px;
+}
+
+#home-navigation-bar ul
+{
+    list-style-type: none;
+    text-align: left;
+    position: relative;
+    float: right;
+}
+
+#home-navigation-bar ul li
+{
+    display: inline;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#home-navigation-bar ul li a
+{
+    text-decoration: none;
+}
+
+#home-navigation-bar ul li a:hover
+{
+    /*color: #999;*/
+}
+
+#imgMenu
+{
+    width: 22px;
+    margin: 0px 0px -3px 5px;
+}
+
+#imgHomeIntro
+{
+    width: 100%;
+}
+
+#home-header
+{
+    width: 61%;
+    margin: 15px auto 0px;
+    font-size: 72px;
+}
+
+#home-intro
+{
+    width: 61%;
+    margin: 0px auto;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+#home-main
+{
+    width: 61%;
+    margin: 10px auto 0px;
+}
+
+#tabs
+{
+    margin: 0px auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px)
+{
+    #tab-body
+    {
+        width: 70%;
+        margin-top: 30px;
+        position: relative;
+        float: right;
+    }
+
+    #tab-headers
+    {
+        width: 20%;
+        position: relative;
+        float: left;
+    }
+    
+    .tab-image
+    {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1199px)
+{
+    #tab-body
+    {
+        width: 65%;
+        margin-top: 30px;
+        position: relative;
+        float: right;
+    }
+
+    #tab-headers
+    {
+        width: 15%;
+        position: relative;
+        float: left;
+    }
+    
+    .tab-image
+    {
+        width: 150px;
+    }
+}
+
+#tab-headers ul
+{
+    list-style-type: none;
+    text-align: left;
+}
+
+#tab-headers ul li
+{
+    padding: 10px;
+    width: 100px;
+    font-size: 16px;
+    outline: 0;
+}
+
+#tab-headers ul li a
+{
+    text-decoration: none;
+    outline: 0;
+}
+
+.tab-text-header
+{
+    color: #222;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.tab-text-body
+{
+    color: #222;
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 1.3em;
+}
+
+.tab-text-body a:link, .tab-text-body a:visited
+{
+    color: #FF6600; 
+}

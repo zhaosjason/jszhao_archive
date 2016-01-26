@@ -1,0 +1,198 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: #222;
+}
+
+#link:link, #link:visited
+{
+    text-decoration: none;
+    color: #E16C0F;  
+}
+
+/*Desktop Big*/
+@media screen and (min-width: 1100px)
+{
+    #wrapper
+    {
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+        top: 250px;
+        color: White;
+        font-family: Arial;
+    }
+
+    #header
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    #main
+    {
+        width: 50%;
+        margin: 30px auto;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.3em;
+    }
+}
+
+/*Desktop Medium*/
+@media screen and (min-width: 720px) and (max-width: 1099px) and (min-height: 500px)
+{
+    #wrapper
+    {
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+        top: 225px;
+        color: White;
+        font-family: Arial;
+    }
+
+    #header
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 42px;
+    }
+
+    #main
+    {
+        width: 65%;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.3em;
+    }
+}
+
+/*Desktop Small*/
+@media screen and (min-width: 720px) and (max-width: 1099px) and (max-height: 499px)
+{
+    #wrapper
+    {
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+        top: 125px;
+        color: White;
+        font-family: Arial;
+    }
+
+    #header
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #main
+    {
+        width: 65%;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+}
+
+/*Desktop Misc 1*/
+@media screen and (max-width: 719px)
+{
+    #wrapper
+    {
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+        top: 225px;
+        color: White;
+        font-family: Arial;
+    }
+
+    #header
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    #main
+    {
+        width: 50%;
+        margin: 15px auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+}
+
+/*Mobile Landscape*/
+@media screen and (max-width: 719px) and (max-height: 350px) and (orientation: landscape)
+{
+    #wrapper
+    {
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+        top: 75px;
+        color: White;
+        font-family: Arial;
+    }
+
+    #header
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    #main
+    {
+        width: 50%;
+        margin: 15px auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+}
+
+/*Mobile Portrait*/
+@media screen and (max-width: 719px) and (max-height: 530px) and (orientation: portrait)
+{
+    #wrapper
+    {
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+        top: 150px;
+        color: White;
+        font-family: Arial;
+    }
+
+    #header
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    #main
+    {
+        width: 80%;
+        margin: 15px auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+}
+
+/*You like the padding, Chris??*/
