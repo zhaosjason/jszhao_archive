@@ -33,11 +33,11 @@
                 <li><a class="nav-item" href="About.aspx">ABOUT</a></li>
             </ul>
             <div class="footer">
-                <a></a>
-                <asp:Image ID="imgFBIcon" runat="server" ImageUrl="images/facebook_icon.png" PostBackUrl="http://www.facebook.com/jason.zhao.522" /></a>
-                <a></a>
-                <asp:Image ID="imgTwtIcon" runat="server" ImageUrl="images/twitter_icon.png" PostBackUrl="http://www.twitter.com/DBJZhao" /></a>
-                <p>
+                <a class="text-link" href="https://www.facebook.com/jason.zhao.522"><asp:Image ID="imgFBIcon" CssClass="social-icon" runat="server" ImageUrl="images/facebook_logo.png" /></a>
+                <a class="text-link" href="https://github.com/zhaosjason"><asp:Image ID="imgGitIcon" CssClass="social-icon" runat="server" ImageUrl="images/github_logo.png" /></a>
+                <a class="text-link" href="http://www.linkedin.com/pub/jason-zhao/a3/345/14/"><asp:Image ID="imgLIIcon" CssClass="social-icon" runat="server" ImageUrl="images/linkedin_logo.png" /></a>
+
+		<p>
                     COPYRIGHT &copy MMXIV
                     <br />
                     JASON S. ZHAO
@@ -52,8 +52,8 @@
                 <h2>What it means to me</h2>
                 <div class="running-body2-text">
                     Tucking in my shoelaces and mimicking the reassuring chime of my watch has become
-                    a ritual for me: it marks the beginning of a run. Some days I’ll go out for nine
-                    miles and others for three, but they’re all the same. I have to fight the tightness
+                    a ritual for me: it marks the beginning of a run. Some days I'll go out for nine
+                    miles and others for three, but they're all the same. I have to fight the tightness
                     in my calves and urge to stop every step. But behind the pain is a hidden sanctuary;
                     running is my time for mental relaxation. It lifts me from the binds of school and
                     the pressures of stress, and provides me with the luxury of not having to think.
@@ -63,7 +63,7 @@
                 </div>
                 <asp:Image ID="imgTeam" runat="server" ImageUrl="images/running_5S.jpg" />
                 <div id="running-body2-text2" class="running-body2-text">
-                    But that’s not all. When running competitively for cross country or track, my sanctuary
+                    But that's not all. When running competitively for cross country or track, my sanctuary
                     transforms into my foundation for success. Of my seven years of running cross country,
                     what keeps me hooked is that you get out what you put in. Improving after a season
                     of hard work encourages me in my other endeavors where the progress is not as linear.
@@ -76,7 +76,7 @@
             </div>
             <div id="running-body3">
                 <h2 id="running-body3-title">GOALS AND PERSONAL RECORDS</h2>
-                <div id="running-body3-times"> <table id="running-body3-times-container"> <tr> <td> <table> <tr> <td class="running-body3-times-break"> 2014 Cross Country </td> </tr> <tr> <td> 5000M </td> <td> 16:30 </td> </tr> <tr> <td class="running-body3-times-break"> 2014 Track </td> </tr> <tr> <td> 400M </td> <td> 59.0 </td> </tr> <tr> <td> 800M </td> <td> 2:11 </td> </tr> <tr> <td> 1600M </td> <td> 4:59 </td> </tr> <tr> <td> 3200M </td> <td> 11:13 </td> </tr> </table> </td> <td> <table> <tr> <td class="running-body3-times-break"> 2013 Cross Country </td> </tr> <tr> <td> 5000M </td> <td> 17:04 </td> </tr> <tr> <td class="running-body3-times-break"> 2013 Track </td> </tr> <tr> <td> 400M </td> <td> - </td> </tr> <tr> <td> 800M </td> <td> 2:11 </td> </tr> <tr> <td> 1600M </td> <td> 4:59 </td> </tr> <tr> <td> 3200M </td> <td> 11:13 </td> </tr> </table> </td> </tr> </table> </div>
+                <div id="running-body3-times"> <table id="running-body3-times-container"> <tr> <td> <table> <tr> <td class="running-body3-times-break"> 2014 Cross Country </td> </tr> <tr> <td> 5000M </td> <td> 17:04 </td> </tr> <tr> <td class="running-body3-times-break"> 2014 Track </td> </tr> <tr> <td> 400M </td> <td> 59.0 </td> </tr> <tr> <td> 800M </td> <td> 2:15 </td> </tr> <tr> <td> 1600M </td> <td> 4:59 </td> </tr> <tr> <td> 3200M </td> <td> 11:13 </td> </tr> </table> </td> <td> </td> </tr> </table> </div>
                 <asp:Button ID="btnRunningContact" runat="server" Text="Contact Me" PostBackUrl="Contact.aspx" />
             </div>
         </div>

@@ -36,9 +36,4 @@ public partial class About : System.Web.UI.Page
             this.lblFeedbackSubmit.Text = "Your message has been sent!";
         }
     }
-
-    protected void btnDwnResume_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("documents/000 Jason Zhao Resume.pdf");
-    }
 }

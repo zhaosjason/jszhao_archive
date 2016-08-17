@@ -64,10 +64,8 @@
                                 Jason S. Zhao
                             </div>
                             <div class='info'>
-                                (317) 412-3849</div>
-                            <div class='info'>
-                                zhao.s.jason (at) columbia.edu<br />
-                                zhao.s.jason (at) gmail.com
+                                zhao.s.jason (at) columbia edu<br /><br />
+                                zhao.s.jason (at) gmail com
                             </div>
                         </div>
                     </td>

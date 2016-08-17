@@ -49,7 +49,7 @@
                 <p id='about-content-body'>
                     Hi, thank you for visiting my website!  My name is Jason Zhao, and I am an <asp:Label ID="lblAge" runat="server" Text=""></asp:Label> year old student at Columbia University.  I designed and coded this website as my personal portfolio for running, violin, and computer science.  You can find my most recent computer science projects in <a class='text-link' href='Projects.aspx?page=1'>Projects</a>, my cross country and track stats in <a class='text-link' href='Running.aspx'>Running</a>, and excerpts from my orchestra in <a class='text-link' href='Violin.aspx'>Violin</a>.  Please feel free to contact me in the form below or for more information, go <a class='text-link' href='Contact.aspx'>here</a>.  I hope you enjoy the site!
                 </p>
-                <asp:Button ID="btnDwnResume" runat="server" Text="Download My Resume (pdf)" onclick="btnDwnResume_Click"/>
+                <asp:Button ID="btnDwnResume" runat="server" Text="Download My Resume (pdf)" PostBackUrl="https://drive.google.com/open?id=0B2WfTtlx8ZB1cVlWTFFFcS1VMkk" />
                 <div id='about-content-feedback'>
                     <h2>FEEDBACK</h2>
                     <div>
